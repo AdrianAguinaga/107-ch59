@@ -11,7 +11,8 @@ function App() {
   return (
     <>
      <Header></Header>
-     <QuantityPicker/>
+     { <QuantityPicker/> }
+  
      <Footer/>
     
     </>

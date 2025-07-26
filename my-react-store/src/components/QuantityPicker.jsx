@@ -18,12 +18,19 @@ const [quantity,setQuantity]=useState (1);
         setQuantity(val);
     }
 
+    function increase()
+    {
+        let val = quantity + 1;
+        setQuantity(val)
+    }
+
+
     return(
 
         <div className="qt-picker" >
-            <button onClick={decrease}> - </button>
+            <button onClick={decrease} disabled={quantity === 1}> - </button>
             <label>{quantity}</label>
-            <button> + </button>
+            <button onClick={increase}> + </button>
 
         </div>
     );
