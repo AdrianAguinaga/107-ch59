@@ -27,6 +27,13 @@ const products = [
     image: "https://picsum.photos/300/200?random=4",
     category: "Electronics",
   },
+  {
+    _id: 5, //the id most be UNIQUE
+    title: "Headphone",
+    price: 60.0,
+    image: "https://picsum.photos/300/200?random=5",
+    category: "Electronics",
+  },
 ];
 
 class DataService {
