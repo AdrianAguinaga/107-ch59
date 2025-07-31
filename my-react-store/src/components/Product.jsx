@@ -1,9 +1,6 @@
 import QuantityPicker from "./QuantityPicker";
 
 function Product({parent}){
-    const formatPrice = (price) => {
-        return price.toFixed(2);
-    };
 
        return (
         <div className="col-md-4 mb-4">

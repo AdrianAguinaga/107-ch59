@@ -45,14 +45,7 @@ class DataService {
       }, 500);
     });
   }
-  //get products by ID
-  static getProductsByID(_id) {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        const product = products.find((p) => p._id === _id);
-        resolve(product);
-      }, 300);
-    });
-  }
+ 
+ 
 }
 export default DataService
