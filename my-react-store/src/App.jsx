@@ -3,7 +3,8 @@ import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Navbar'
 import Catalog from './pages/Catalog'
-// import QuantityPicker from './components/QuantityPicker'
+import "bootstrap/dist/css/bootstrap.min.css"
+
 
 function App() {
  
@@ -11,8 +12,7 @@ function App() {
   
   return (
     <>
-     <Header></Header>
- 
+     <Header></Header> 
     <Catalog/>
      <Footer/>
     

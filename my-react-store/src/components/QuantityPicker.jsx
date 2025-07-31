@@ -5,8 +5,6 @@ import { useState } from "react";
 function QuantityPicker()
 {
 const [quantity,setQuantity]=useState (1);
-
-
     function decrease()
     {
         console.log("decreasing");
@@ -28,9 +26,9 @@ const [quantity,setQuantity]=useState (1);
     return(
 
         <div className="qt-picker" >
-            <button onClick={decrease} disabled={quantity === 1}> - </button>
+            <button className="btn btn-lg btn-dark" onClick={decrease} disabled={quantity === 1}> - </button>
             <label>{quantity}</label>
-            <button onClick={increase}> + </button>
+            <button className="btn btn-lg btn-primary" onClick={increase}> + </button>
 
         </div>
     );

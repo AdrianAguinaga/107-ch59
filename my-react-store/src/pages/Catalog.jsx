@@ -37,7 +37,8 @@ function Catalog() {
         <h2>Product Catalog</h2>
         <p> Showing {products.length} </p>
             <div>
-            {products.map(product => <Product data={product}/>)}
+            {products.map(product => <Product key={product._id} parent={product}/>)}
+            
             </div>
             {/*
             for(i=0;i<products.length;i++)
